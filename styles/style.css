@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #F6F6F6;
+    --tertiary-color: #526D82;
+    --hover-color: #272727;
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    color: var(--secondary-color);
+}
+
+.header_design {
+    padding: 2% 0% 0% 15%;
+}
+
+.menu_design {
+    display: flex;
+    gap: 80px;
+}
+
+.menu_design_link {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.destaque {
+    color:var(--tertiary-color);
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--secondary-font);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.links_texto {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--primary-color);
+    width: 50%;
+    text-align: center;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 8px;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contato:hover {
+    background-color: var(--hover-color);
+}
+
+.foto_perfil {
+    width: 50%;
+    border: solid 2px var(--secondary-color);
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.footer_design {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 1.5rem;
+    color: #000;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* position: absolute;
+    top: 100vh;
+    width: 100%;
+    box-sizing: border-box; */
+}
+
+@media (max-width: 1200px) {
+ 
+    .header_design {
+        padding: 10%;
+    }
+
+    .menu_design {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
