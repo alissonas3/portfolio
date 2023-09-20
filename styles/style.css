@@ -142,4 +142,8 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+    
+    .foto_perfil {
+        width: 80%;
+    }
 }
